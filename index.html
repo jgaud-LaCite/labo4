@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant de ramen</title>
+</head>
+<body>
+    <h1>Restaurant de ramen</h1>
+    <h2>Entrez votre commande:</h2>
+
+    <form>
+        <h3>Votre nom</h3>
+        <input type="text" placeholder="Prénom et Nom">
+
+        <fieldset>
+            <legend>Bouillon</legend>
+
+            <h3>Intensité du goût</h3>
+            <label>Faible
+                <input type="radio" name="intensite" checked>
+            </label>
+            
+
+            <label>Moyenne
+                <input type="radio" name="intensite">
+            </label>
+            
+
+            <label>Forte
+                <input type="radio" name="intensite">
+            </label>
+            
+
+            <h3>Richesse</h3>
+            <label for="richesse-aucune">Aucune</label>
+            <input id="richesse-aucune" type="radio" name="richesse">
+
+            <label>Legere
+                <input type="radio" name="richesse">
+            </label>
+            
+            <label>Moyenne
+                <input type="radio" name="richesse">
+            </label>
+            
+            <label>Forte
+                <input type="radio" name="richesse">
+            </label>
+            
+            <label>Ultra
+                <input type="radio" name="richesse">
+            </label>
+            
+        </fieldset>
+
+        <h3>Texture</h3>
+        <select size="5" multiple>
+            <option>Extra Ferme</option>
+            <option>Ferme</option>
+            <option selected>Moyenne</option>
+            <option>Molle</option>
+            <option>Extra Molle</option>
+        </select>
+
+        <p>Pays</p>
+        <select size="1">
+            <optgroup label="Amerique du Nord">
+                <option>Canada
+                    <option>États-
+                Unis</option>
+            </optgroup>
+            <optgroup label="Afrique">
+                <option>Tunisie</option>
+                <option>Algerie</option>
+                <option>Cameroon</option>
+                <option>Congo</option>
+            </optgroup>
+        </select>
+
+        <h3>Envoyer la commande</h3>
+        <input type="submit" value="Soumettre la commande">
+    </form>
+</body>
+</html>
